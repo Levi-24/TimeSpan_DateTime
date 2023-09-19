@@ -24,8 +24,9 @@ namespace ydffhgf
             
             Console.WriteLine();
             //Dátum-idő tárolása
-            DateTime dt = new DateTime(1990,10,21);
+            DateTime dt = new DateTime(1990,10,29);
             Console.WriteLine(dt);
+            Console.WriteLine(dt.ToString("yyyy-MM-dd (dddd)"));
 
         }
     }

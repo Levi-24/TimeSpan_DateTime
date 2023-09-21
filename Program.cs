@@ -54,6 +54,11 @@ namespace ydffhgf
             {
                 Console.WriteLine(d);
             }
+
+            var asd = dt1.Add(new TimeSpan(1, 20, 30));
+
+            Console.WriteLine();
+            Console.WriteLine(asd);
         }
     }
 }

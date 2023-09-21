@@ -34,11 +34,17 @@ namespace ydffhgf
             var dtn = dt1.AddDays(100.5);
             Console.WriteLine(dt1 > dt2);
 
-            Console.WriteLine(DateTime.DaysInMonth(2012,07));
+            var dim = DateTime.DaysInMonth(2012, 07);
+            Console.WriteLine(dim);
 
-            Console.WriteLine(DateTime.IsLeapYear(2000));
+            var ily = DateTime.IsLeapYear(2000);
+            Console.WriteLine(ily);
 
-            Console.WriteLine();
+            var m = DateTime.MaxValue;
+            Console.WriteLine(m);
+
+            var dt5 = DateTime.Parse("2000. 04. 16.");
+            Console.WriteLine(dt5);
         }
     }
 }

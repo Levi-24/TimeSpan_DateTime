@@ -24,10 +24,14 @@ namespace ydffhgf
             
             Console.WriteLine();
             //Dátum-idő tárolása
-            DateTime dt = new DateTime(1990,10,29);
-            Console.WriteLine(dt);
-            Console.WriteLine(dt.ToString("yyyy-MM-dd (dddd)"));
+            var dt1 = new DateTime(2023, 09, 01, 22, 00, 00);
+            DateTime dt2 = new DateTime(1995,10,11);
+            Console.WriteLine(dt1);
+            Console.WriteLine(dt1.ToString("yyyy-MM-dd (dddd)"));
+            TimeSpan ts4 = dt1 - dt2;
+            Console.WriteLine(ts4);
 
+            var dtn = dt1.AddDays(100.5);
         }
     }
 }

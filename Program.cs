@@ -32,6 +32,13 @@ namespace ydffhgf
             Console.WriteLine(ts4);
 
             var dtn = dt1.AddDays(100.5);
+            Console.WriteLine(dt1 > dt2);
+
+            Console.WriteLine(DateTime.DaysInMonth(2012,07));
+
+            Console.WriteLine(DateTime.IsLeapYear(2000));
+
+            Console.WriteLine();
         }
     }
 }

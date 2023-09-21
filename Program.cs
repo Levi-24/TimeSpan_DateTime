@@ -43,8 +43,17 @@ namespace ydffhgf
             var m = DateTime.MaxValue;
             Console.WriteLine(m);
 
-            var dt5 = DateTime.Parse("2000. 04. 16.");
+            var dt5 = DateTime.Parse("2000-04-16");
             Console.WriteLine(dt5);
+
+            Console.WriteLine("----------------------------");
+
+            for (DateTime d = new DateTime(2023, 09, 07);
+                d <= DateTime.Parse("2024-06-15");
+                d = d.AddDays(7))
+            {
+                Console.WriteLine(d);
+            }
         }
     }
 }
